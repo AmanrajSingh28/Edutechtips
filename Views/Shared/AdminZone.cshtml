@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+     <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/hover-min.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery-ui.theme.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery-ui.theme.min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery-ui.js"></script>
+    <script src="~/Content/js/jquery-ui.min.js"></script>
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid" style="background:lightgray;">
+        <!----code for header---->
+        <div class="row" style="min-height:70px;background:white; color:white;">
+            <div class="col-sm-4">
+                <img src="~/Content/themes/base/EDU1.PNG" style="height:120px;width:100%;"/>
+            </div>
+            <div class="col-sm-8"  style="font-weight:bold;">
+                </div>
+            <!--<div class="col-sm-2">
+                <img src="~/Content/photos/abd.png" style="height:100px;width:100%;"/>
+            </div>-->
+           <!--<div class="col-sm-12"  style="font-weight:bold;">
+                <h1 style="color:black;margin-left:5%;font-weight:bold;">edutech<span style="color:orange;">tips</span></h1>
+                <p style="color:black;margin-left:5%;">THE WORLD'S LARGEST SELF LEARNING SITE</p>
+            </div>-->
+        </div>
+        <div class="row"style="color:white;">
+            <div class="col-sm-12">
+                <h1 style="text-align:center; min-height:50px; background-image: linear-gradient(to right top, #ee210d, #fc6900, #ff9d00, #fece00, #f3fd15); color:white;">Welcome Admin</h1>
+            </div>
+        </div>
+        <!------end code for header----->
+    <div style="min-height:400px;">
+        @RenderBody()
+    </div>
+       <div class="row">
+            <div class="colo-sm-12" style="min-height:70px;  background:black; color:white; text-align:center;font-size:20px;">Developed & Degined by Amanraj Singh (edutechtips)</div>
+        </div>
+    </div>
+</body>
+</html>

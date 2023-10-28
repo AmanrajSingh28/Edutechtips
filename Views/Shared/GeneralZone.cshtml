@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/Menu.css" rel="stylesheet" />
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/hover-min.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery-ui.theme.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery-ui.theme.min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery-ui.js"></script>
+    <script src="~/Content/js/jquery-ui.min.js"></script>
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/Menu.js"></script>
+
+   
+    <link href="~/Content/MyModal/style.css" rel="stylesheet" />
+
+
+    <!---------code for show/hide password--------->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pwd");
+            if (x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+</script>
+
+    <!--------end code for show/hide password---------->
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!----code for header---->
+        <div class="row" style="min-height:0px;">
+            <div class="col-sm-4">
+                <img src="~/Content/themes/base/EDU1.PNG" style="height:120px;width:100%;"/>
+            </div>
+            <div class="col-sm-8"  style="font-weight:bold;">
+                <!--<h1 style="margin-left:5%; color:black;font-family:'Times New Roman';">edutech<span style="color:orange;">tips</span></h1>
+                <p style="margin-left:5%;font-family:'Times New Roman'"><i>THE WORLD'S LARGEST SELF LEARNING SITE</i></p>-->
+            </div>
+        </div>
+        <!------end code for header----->
+
+        <!----------------------------Code for navbar----------------------------------->
+        <div class="row">
+            
+         
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+  <nav class="navbar navbar-inverse" style="background-image: linear-gradient(to right top, #ee210d, #fc6900, #ff9d00, #fece00, #f3fd15);border-style:none;">
+    <div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand fa fa-home" href="/Home/Index" style="color:white;font-size:30px;"></a>
+	</div>
+	
+      <!--------------------code for Reference---------------------------->
+	<div class="collapse navbar-collapse js-navbar-collapse">
+		
+
+            <!--------------code for tutorial --------------->
+  
+      
+        
+     
+         
+    <!------------end code for tutorial----------------->
+        <ul class="nav navbar-nav">
+            
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:white;font-size:16px;font-weight:bold;">Tutorial<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/Home/HTMLPage">HTML</a></li>
+            <li><a href="/Home/CSSPage">CSS</a></li>
+            <li><a href="/Home/JavaScriptPage">JavaScript</a></li>
+            <li><a href="/Home/BootstrapPage">Bootstrap</a></li>
+              <li><a href="/Home/SQLPage">SQL</a></li>
+          </ul>
+        </li>
+			<li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;font-size:16px;font-weight:bold;">Reference<span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+
+                    <li class="col-sm-3" >
+                        <ul>
+                        <li class="dropdown-header"><h3>HTML</h3></li>
+                        <li style="text-align:justify; color:black;"><a href="#">HTML Tag Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Event Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Color Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Canvas Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML SVG Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Character Sets</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">Google Maps Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Event Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">HTML Event Reference</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header"><h3>SQL</h3></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">SQL Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">ASP Reference</a></li>
+                        </ul>
+                     </li>
+                    
+                    <li class="col-sm-3">
+                       <ul>
+                        <li class="dropdown-header"><h3>CSS</h3></li>
+                        <li style="text-align:justify; color:black;"><a href="#">CSS Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">CSS Browser Support</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">CSS Selector</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">W3.CSS Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">Icon Reference</a></li>
+                          <li class="divider"></li>  
+                        <li class="dropdown-header">Bootstrap</li>
+                        <li  style="text-align:justify; color:black;"><a href="#">Bootstrap 3 Reference</a></li>
+                        <li  style="text-align:justify; color:black;"><a href="#">Bootstrap 4 Reference</a></li>  
+                        <li class="divider"></li>
+                       </ul>                     
+                    </li>
+                   
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">JavaScript</li>
+                            <li style="text-align:justify; color:black;"><a href="#">JavaScript Reference</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">HTML DOM Reference</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">jQuery Reference</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">AngularJS Reference</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">W3.JS Reference</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Programming</li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn C</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn C++</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn C#</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn Java</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn .Net</a></li>
+                            <li  style="text-align:justify; color:black;"><a href="#">Learn Python</a></li>
+                        </ul>
+                    </li>   
+                      
+                    <li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header"><h1 style="text-align:center;">Our Reference</h1></li>                            
+                            <ul id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="~/Content/projectimg/ab6.png"class="img-responsive" alt="" style="height:200px; width:80%;"></a>
+                                           
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="~/Content/projectimg/ab3.jpg" class="img-responsive" alt="" style="height:200px; width:80%;"></a>
+                                   
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="~/Content/projectimg/ab7.png" class="img-responsive" alt="" style="height:200px; width:80%;"></a>
+                                      
+                                </div>
+                                   <div class="item">
+                                    <a href="#"><img src="~/Content/projectimg/ab4.png" class="img-responsive" alt="" style="height:200px; width:80%;"></a>
+                                    
+                                </div>
+                                  <!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                             
+                            </ul><!-- /.carousel -->
+                            </ul>
+
+
+						</ul>
+                        
+					</li>
+                    
+				
+
+            <!--------------------code for Reference---------------------------->
+
+            <li><a href="/Home/Templates" style="color:white;font-size:16px;font-weight:bold;">Templates</a></li>
+
+            <li><a href="/Home/AboutUs" style="color:white;font-size:16px;font-weight:bold;">AboutUs</a></li>
+
+             <li><a href="/Home/ContactUs" style="color:white;font-size:16px;font-weight:bold;">ContactUs</a></li>
+            
+             <li><a href="/Home/Downloads" style="color:white;font-size:16px;font-weight:bold;">Downloads</a></li>          
+            
+		</ul>
+       
+       <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+	</div><!-- /.nav-collapse -->
+  </nav>
+
+
+            
+        </div>
+        <!----------------------------End Code for navbar----------------------------------->
+
+      <div style="background:white; min-height:300px;">
+        @RenderBody()
+      </div>
+
+        <!----code for footer---->
+        <div class="row" style="min-height:100px; background:black; color:white; box-shadow:inset 0 0 2em black">
+            <div class="col-sm-4" style="color:white; text-align:center;">
+                <h3><b>Quick Links</b></h3>
+                <h5><a href="/Home/AboutUs" style="text-decoration:none; color:white;">AboutUs</a></h5>
+                <h5><a href="/Home/ContactUs" style="text-decoration:none; color:white;">ContactUs</a></h5>
+                <h5><a href="/Home/Templates" style="text-decoration:none; color:white;">Templates</a></h5>
+            </div>
+
+            <div class="col-sm-4">
+               <a href="/Home/AdminLogin"><button class="btn btn-success" style="margin-top:10%; margin-left:40%;">Admin Login</button></a><br />
+                <span class="fa fa-facebook-square" style="font-size:35px; margin-left:25%; margin-top:10%;"></span>
+                <span class="fa fa-twitter" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-envelope" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-instagram" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-google" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+            </div>
+
+            <!--<div class="col-sm-3" style="color:white; text-align:center;">
+                <h3>Our Teams</h3>
+                <h5>Sakib Ahmad</h5>
+                <h5>Aman Raj Singh</h5>
+                <h5>Prabhat Chaudhary</h5>
+            </div>-->
+
+            <div class="col-sm-4">
+                <!--<span style="font-size:30px; width:100%; text-align:center;"></span><h1 style="text-align:center;">edutech<span style="color:orange;">tips</span></h1>-->
+                <img src="~/Content/themes/base/EDU1.PNG" style="height:100px;width:100%;margin-top:2%;"/>
+                <p>A new year welcoms a new generation of engineers. Connect with us to start your journey.</p>
+               
+            </div>
+           <div class="col-sm-12">  <hr/> <p style="color:white;text-align:center;">Developed & Degined by Amanraj Singh</p> </div>
+            <div class="col-sm-12">  <hr/> <p style="color:white;text-align:center;">Copyright &copy; 2019 all rights reserved, powered by edutechtips</p> </div>
+        </div>
+        
+
+        <!----end code for footer---->
+
+    </div>
+</body>
+</html>
