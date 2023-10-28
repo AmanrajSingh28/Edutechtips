@@ -1,0 +1,298 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/GeneralZone.cshtml";
+}
+
+<html>
+    <head>
+        <link href="~/Content/css/HTMLPopUp.css" rel="stylesheet" />
+        <!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=84dd4030-048f-454f-99d8-b55891e868f3"> </script>
+<!-- End of  Zendesk Widget script -->
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+
+            <!-----------code for image------------->
+            <div class="row" style="background-image:url('/Content/themes/pic12.jpg');background-size:100% 100%;min-height:450px;margin-top:-3%;" >
+            <div class="row"style="background:rgba(22,12,12,0.1);min-height:450px;">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8"><h1 class="text text-uppercase text-info" style="color:orange;font-family:'Times New Roman';"><center>The next Generation of Engineer starts here</center></h1><p ><center style="color:black;font-size:15px;font-family:'Times New Roman';">A NEW YEAR WELCOMES A NEW GENERATION OF ENGINEERS. CONNECT WITH US TO START YOUR JOURNEY.</center></p></div>
+                <div class="col-sm-2"></div>
+            </div>
+            </div>
+            <!-----------------code for set content on image--------------------->
+            
+            <!----------------end code for set content on image---------------------->
+            <!------------end code for image------------>
+        
+                <div class="row" style="background:white;">
+                                 <h1 style="color:dodgerblue; font-weight:bold; text-align:center; margin-bottom:2%;font-family:'Times New Roman';">| OUR TUTORIALS |</h1>
+                <div class="col-sm-6 hvr hvr-push" style=" min-height:200px; background:white;">
+                    <h1 style="margin-top:40px; margin-left:25%;font-family:'Times New Roman';">Learn HTML</h1>
+                     <img src="~/Content/projectimg/ab6.png" style="height:200px; margin-left:25%;"/><br />
+                   <a class="button" href="#popup1"><button class="btn btn-info" style="margin-top:30px; margin-left:125%;">HTML Example</button></a> 
+                </div>
+                <div class="col-sm-6 hvr hvr-push" style=" min-height:200px; background:white;">
+                    <h1 style="margin-top:40px; margin-left:15%;font-family:'Times New Roman';">Learn CSS</h1>
+                    <img src="~/Content/projectimg/ab3.jpg" style="height:200px; margin-left:15%;" /><br />
+                   <a class="button" href="#popup2"><button class="btn btn-info" style="margin-top:30px; margin-left:100%;">CSS Example</button></a>  
+                </div>
+                <div class="col-sm-6 hvr hvr-push" style=" min-height:200px; background:white">
+                    <h1 style="margin-top:40px; margin-left:25%;font-family:'Times New Roman';">Learn Bootstrap</h1>
+                    <img src="~/Content/projectimg/ab7.png" style="height:200px; margin-left:25%;"/><br />
+                  <a class="button" href="#popup4"><button class="btn btn-info" style="margin-top:30px; margin-left:125%;">Bootstrap Example</button></a>
+                </div>
+                <div class="col-sm-6 hvr hvr-push" style=" min-height:200px; background:white;">
+                    <h1 style="margin-top:40px; margin-left:20%;font-family:'Times New Roman';">Learn JavaScript</h1>
+                    <img src="~/Content/projectimg/ab4.png" style="height:200px; margin-left:20%;"/><br />
+                  <a class="button" href="#popup4"><button class="btn btn-info" style="margin-top:30px; margin-left:80%;">JavaScript Example</button></a>
+                </div>
+            </div>
+
+            
+            <!---------------------------------------code for event--------------------------------------------------------->
+            <div class="row panel panel-body" style="background-image: linear-gradient(to right top, #210dee, #0070ff, #00a3ff, #00ceff, #15f3fd); color:white;min-height:250px;">
+                <div class="col-sm-12">
+                    <div class="col-sm-6 panel panel-body about" style="margin-top:3%;">
+                         <h1 class="text text-uppercase text-info" style="color:black;font-family:'Times New Roman';">This is Experiential Education</h1><span style="text-align: justify;color:black;">Edutechtips challanges students to do what they learn in the classroom to practical, real-world situtions. Explore options for all students from full-time to online and everything in-between.</span>
+                    </div>
+                    <!--code for notification-->
+                    <div class="col-sm-6">
+<h2 style="color:white; font-weight:bold; text-align:center; margin-top:2%;font-family:'Times New Roman';">Current Activities</h2>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 panel panel-body" style="background:white;" >
+                      <marquee direction="up">@Html.Raw(ViewBag.details);</marquee>
+                </div>
+                <div class="col-sm-1"></div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            <!---------------------------------------end code for event--------------------------------------------------------->
+
+            <!----------------------code for template image----------------------------------------->
+            
+             <div class="row panel panel-body" style="background:gray;">
+                 <h1 style="text-align:center;font-family:'Times New Roman';">WEB TEMPLATES</h1>
+                 <p style="text-align:center;font-family:'Times New Roman';">Browse Our Free Responsive Templates</p>
+           <a href="/Home/Templates"> <img src="~/Content/themes/temp4.png" class="img img-responsive" alt="image loading error"  style="background:pink; height:500px; width:100%;"/></a>
+            </div>
+
+            <!------------------------code for template image--------------------------------------->
+
+            <!-------------------------------code for Quiz---------------------------------->
+
+            <div class="row panel panel-body" style="background:white;">
+               <h1 style="color:dodgerblue; font-weight:bold; text-align:center; margin-bottom:2%;font-family:'Times New Roman';">| Exercises |</h1>
+                    <p style="font-weight:bold; text-align:center; margin-bottom:2%;font-family:'Times New Roman';">Test Yourself with our Excercises & Quiz</p>
+                <div class="col-sm-4 hvr hvr-pulse " style="min-height:50px;">
+                    <h1 style="text-align:center;font-family:'Times New Roman';">HTML Exercise</h1>
+                   <center><button class="btn btn-success" style="margin:15px;">Try Yourself</button></center> 
+                </div>
+                <div class="col-sm-4 hvr hvr-pulse" style="min-height:50px;">
+                    <h1 style="text-align:center;font-family:'Times New Roman';">CSS Exercise</h1>
+                   <center><button class="btn btn-success" style="margin:15px;">Try Yourself</button></center> 
+                </div>
+                <div class="col-sm-4 hvr hvr-pulse" style="min-height:50px;">
+                   <h1 style="text-align:center;font-family:'Times New Roman';">SQL Exercise</h1>
+                   <center><button class="btn btn-success" style="margin:15px;">Try Yourself</button></center> 
+                </div>
+                
+            <div class="col-sm-12" style="margin-top:5%;">
+                <div class="col-sm-6 hvr hvr-pulse" style="min-height:50px;">
+                   <h1 style="text-align:center;font-family:'Times New Roman';">Bootstrap Exercise</h1>
+                   <center><button class="btn btn-success" style="margin:15px;">Try Yourself</button></center> 
+                </div>
+                <div class="col-sm-6 hvr hvr-pulse" style="min-height:50px;">
+                   <h1 style="text-align:center;font-family:'Times New Roman';">JavaScript Exercise</h1>
+                   <center><button class="btn btn-success" style="margin:15px;">Try Yourself</button></center>  
+                </div>
+            </div>
+          </div>
+            <!-------------------------------end code for Quiz---------------------------------->
+
+<!---------------------------------------------HTML JavaScript----------------------------------------------------->
+            <div class="popup" id="popup4">
+    <div class="popup-inner">
+      <div class="popupphoto">
+          <img src="~/Content/themes/temp7.png" />
+      </div>
+      <div class="popuptext">
+        <pre>
+        &lt;html&gt
+        
+        &lt;head&gt
+            
+        &lt;title&gt Title of My Webpage &lt;/title&gt;
+                  
+        &lt;script&gt;
+            
+        function f1()
+          {
+             alert('javascript function has been executed');
+          }
+                
+         &lt;script&gt;
+           
+         &lt;/head&gt;
+            
+         &lt;body&gt
+              
+         &lt;div class="container-fluid"&gt;
+                
+         &lt;div class="row"&gt;
+                 
+         &lt;h1&gt This is a Heading. &lt;/h1&gt;
+                  
+         &lt;p&gt This is a Paragraph. &lt;/p&gt;
+                  
+         &lt;button class="btn btn-success" onclick="f1()"&gt;click here&lt;/button&gt;
+               
+         &lt;/div&gt;
+               
+         &lt;/div&gt;
+        
+         &lt;/body&gt;
+        
+         &lt;/html&gt;
+        </pre>
+      </div>
+      <a class="closepopup" href="#">X</a>
+    </div>
+  </div>
+<!---------------------------------------------End JavaScript Example----------------------------------------------------->
+
+<!---------------------------------------------CSS Example----------------------------------------------------->
+            <div class="popup" id="popup2">
+    <div class="popup-inner">
+      <div class="popupphoto">
+          <img src="~/Content/themes/temp7.png" />
+      </div>
+      <div class="popuptext">
+        <pre>
+        &lt;html&gt
+           
+        &lt;head&gt
+                
+        &lt;title&gt Title of My Webpage &lt;/title&gt;
+                  
+        &lt;style&lt;
+             
+        h1
+          {
+            color:white;
+            background:teal;
+          }
+       #id1
+          {
+            border:1px solid blue;
+          }
+       .class1
+          {
+            background:aqua;
+          }
+                
+        &lt;/style&lt;
+           
+        &lt;/head&gt;
+       
+        &lt;body class="class1"&gt
+                
+        &lt;h1&gt This is a Heading. &lt;/h1&gt;
+                 
+        &lt;p id="id1"&gt This is a Paragraph. &lt;/p&gt;
+           
+        &lt;/body&gt;
+       
+        &lt;/html&gt;
+        </pre>
+      </div>
+      <a class="closepopup" href="#">X</a>
+    </div>
+  </div>
+<!---------------------------------------------End CSS Example----------------------------------------------------->
+
+<!---------------------------------------------Bootstrap Example----------------------------------------------------->
+            <div class="popup" id="popup3">
+    <div class="popup-inner">
+      <div class="popupphoto">
+          <img src="~/Content/themes/temp7.png" />
+      </div>
+      <div class="popuptext">
+        <pre>
+        &lt;html&gt
+           
+        &lt;head&gt
+             
+        &lt;title&gt Title of My Webpage &lt;/title&gt;
+           
+        &lt;/head&gt;
+           
+        &lt;body&gt
+             
+        &lt;div class="container-fluid"&gt;
+              
+        &lt;div class="row"&gt;
+               
+        &lt;h1&gt This is a Heading. &lt;/h1&gt;
+                 
+        &lt;p&gt This is a Paragraph. &lt;/p&gt;
+              
+        &lt;/div&gt;
+             
+        &lt;/div&gt;
+           
+        &lt;/body&gt;
+       
+        &lt;/html&gt;
+        </pre>
+      </div>
+      <a class="closepopup" href="#">X</a>
+    </div>
+  </div>
+<!---------------------------------------------End Bootstrap Example----------------------------------------------------->
+
+<!---------------------------------------------HTML Example----------------------------------------------------->
+            <div class="popup" id="popup1">
+    <div class="popup-inner">
+      <div class="popupphoto">
+          <img src="~/Content/themes/temp7.png" />
+      </div>
+      <div class="popuptext">
+        <pre>
+        &lt;html&gt
+           
+        &lt;head&gt
+                
+        &lt;title&gt Title of My Webpage &lt;/title&gt;
+           
+        &lt;/head&gt;
+           
+        &lt;body&gt
+                
+        &lt;h1&gt This is a Heading. &lt;/h1&gt;
+                 
+        &lt;p&gt This is a Paragraph. &lt;/p&gt;
+           
+        &lt;/body&gt;
+      
+        &lt;/html&gt;
+        </pre>
+      </div>
+      <a class="closepopup" href="#">X</a>
+    </div>
+  </div>
+<!---------------------------------------------End HTML Example----------------------------------------------------->
+
+
+
+        </div>
+
+
+
+    </body>
+</html>

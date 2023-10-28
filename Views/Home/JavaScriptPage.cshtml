@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "JavaScriptPage";
+    Layout = "~/Views/Shared/GeneralZone.cshtml";
+}
+
+<html>
+    <body>
+        <div class="container-fluid">
+            <div class="row" style="margin-bottom:2%;">
+                <div class="col-sm-3" style="background-image: linear-gradient(to right top, #ee210d, #fc6900, #ff9d00, #fece00, #f3fd15); min-height:500px;">
+                    @Html.Raw(ViewBag.topic)
+                </div>
+                <div class="col-sm-9" style="background:white; min-height:500px;">
+                    <h1 style="color:black; text-align:center;">@ViewBag.heading @ViewBag.head</h1>
+                    <h1</h1>
+                    <pre>
+                       
+                     @Html.Raw(ViewBag.theory)
+                         @ViewBag.des
+                        </pre>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

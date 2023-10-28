@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "OurTeam";
+    Layout = "~/Views/Shared/AdminZone.cshtml";
+}
+
+<html><head>
+    <title></title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Content/css/akash.css" rel="stylesheet" />
+        <script src="~/Content/js/jquery.js"></script>
+        <script src="~/Content/js/akash.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#example").DataTable();
+            });
+</script>
+      </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 panel panel-body" style="margin-top:2%;">
+                       @Html.Raw(ViewBag.details)
+                </div>
+                <div class="col-sm-1"></div>
+           </div>
+        <div class="row panel panel-body">
+            <div class="col-sm-6">
+               <button name="AddMember" data-toggle="modal" data-target="#MemberModal" class="btn btn-block btn btn-success">Add Member</button>
+            </div>
+            <div class="col-sm-6">
+               <form action="/Home/Admin">
+                   <button class="btn btn-block btn btn-info">Back</button>
+               </form>
+            </div>
+            
+        </div>
+
+            <!---------------------------------code for modal--------------------------------------->
+
+            <div class="modal fade" id="MemberModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Team Member</h4>
+      </div>
+      <div class="modal-body">
+        
+          <!--admin login section starting here-->
+	  <div class="container">
+				<form action="/Home/OurTeam" method="post" enctype="multipart/form-data">
+					<div class="form-group" style="width:47%;">
+						<label>Username:</label>
+						<div class="input-group form-check">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="mname" placeholder="Enter Member Name" name="mname" required>	
+						</div>
+						</div>
+                    <div class="form-group form-check" style="width:47%;">
+						<label>Gmail:</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						<input type="gmail" class="form-control" id="gmail" placeholder="Enter email" name="email" required>	
+						</div>
+						</div>
+					<div class="form-group form-check" style="width:47%;">
+						<label>Mobile Number:</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+						<input type="digit" class="form-control" id="Mnumber" placeholder="Enter mobile number" name="Mnumber" required>	
+						</div>
+						</div>
+                        <div class="form-group form-check" style="width:47%;">
+                            <label>About Member</label>
+                            <textarea class="form-control" rows="3" id="about" name="about" required></textarea>
+                        </div>
+                        <div class="form-group form check" style="width:45%;">
+                             <label for="exampleInputFile">Upload Photo</label>
+                             <input type="file" id="exampleInputFile" name="Fupic" required />
+                        </div>
+								<div class="form-group form-check" style="width:45%;">
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="remember" required> I am agree to send my data.
+									</label>
+								</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-danger">Reset</button>
+				</form>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <!---------------------------------end code for modal--------------------------------------->
+
+      </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Shared/GeneralZone.cshtml";
+}
+
+
+<html>
+    <body>
+        <div class="container-fluid">
+<div class="row panel panel-body" style=" min-height:100px; margin-bottom:2%;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 panel panel-body" style="background:gray; min-height:100px;">
+                <h2 style="color:white;">Submit Your Suggestion or Query Here.</h2>
+                <form action="/Home/ContactUs" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+						<label>Username:</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required />	
+						</div>
+						</div>
+                    <div class="form-group">
+						<label>Gmail:</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						<input type="text" class="form-control" id="txtem" placeholder="Enter gmail" name="txtem" required />	
+						</div>
+						</div>
+						<div class="form-group form-check">
+							<label>Password:</label>
+							<div class="input-group">
+								<span class="input-group-addon"><button type="button"  class="glyphicon glyphicon-eye-open" onclick="myFunction()"></button></span>
+								<input id="pwd" type="password" class="form-control" name="passwd" placeholder="Password" required />
+							</div>
+								</div>
+                        <div class="form-group form-check">
+                            <label>Suggestion / Query</label>
+                            <textarea class="form-control" rows="3" id="suggest" name="suggest" required></textarea>
+                        </div>
+                        <div class="form-group form check">
+                             <label>Upload Any File</label>
+                             <input type="file" id="InputFile" name="Fupic">
+                        </div>
+                    <div class="form-group form check">
+                             <label>Enter catcha code</label>
+                             <input type="text" readonly="readonly" name="txtCaptcha" value="@ViewBag.captcha" style="height:40px; width:50%; color:teal; font-size:22px; font-weight:bold;">
+                        <input type="text" name="txtCCaptcha" class="form-control" required/>
+                        </div>
+								<div class="form-group form-check">
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="remember" required> I am agree to send my data.
+									</label>
+								</div>
+						<input type="submit" value="Submit" />
+						<input type="reset" value="Reset" />
+				</form>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </body>
+</html>

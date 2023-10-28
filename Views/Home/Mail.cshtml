@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Mail";
+    Layout = "~/Views/Shared/AdminZone.cshtml";
+}
+
+<html>
+    <head>
+    <title></title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Content/css/akash.css" rel="stylesheet" />
+        <script src="~/Content/js/jquery.js"></script>
+        <script src="~/Content/js/akash.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#example").DataTable();
+            });
+</script>
+      </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4 panel panel-body">
+                    <form action="/Home/Mail" method="post">
+                    To :
+                    <input type="text" readonly class="form-control" name="email" value="@ViewBag.id" />
+                    Subject :
+                    <input type="text" required class="form-control" name="subject" />
+                    Message :
+                    <input type="text" required class="form-control" name="message" />
+                    <input type="submit" value="Send" class="btn btn-success" />
+                        </form>
+                </div>
+                <div class="col-sm-4">
+                   <h3>@ViewBag.msg</h3>
+                </div>
+            </div>
+            <div class="row panel panel-body">
+            <div class="col-sm-3">
+               
+            </div>
+            <div class="col-sm-6">
+               <form action="/Home/ResponseManagement">
+                   <button class="btn btn-block btn btn-info">Back</button>
+               </form>
+            </div>
+            <div class="col-sm-3">
+               
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+

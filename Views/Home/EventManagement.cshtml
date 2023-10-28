@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "EventManagement";
+    Layout = "~/Views/Shared/AdminZone.cshtml";
+}
+
+<html>
+    <head>
+    <title></title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Content/css/akash.css" rel="stylesheet" />
+        <script src="~/Content/js/jquery.js"></script>
+        <script src="~/Content/js/akash.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#example").DataTable();
+            });
+</script>
+      </head>
+    <body>
+        <div class="container-fluid">
+        <div class="row panel panel-body">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" style="min-height:400px; background:silver;">
+                <div class="row">
+                
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 panel panel-body" style="background:black; margin-top:2%;">
+                     <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 panel panel-body" style="margin-top:2%;">
+                       @Html.Raw(ViewBag.details)
+                </div>
+                <div class="col-sm-1"></div>
+           </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row panel panel-body">
+            <div class="col-sm-3">
+               
+            </div>
+            <div class="col-sm-6">
+               <form action="/Home/Admin">
+                   <button class="btn btn-block btn btn-success">Back</button>
+               </form>
+            </div>
+            <div class="col-sm-3">
+               
+            </div>
+            
+        </div>
+            </div>
+        </body>
+    </html>
+

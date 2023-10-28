@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/AdminZone.cshtml";
+  
+}
+@if (HttpContext.Current.Session["MyValue"]==null){
+    Response.Redirect("/Home/Index");
+}
+else
+{
+    var statedata=  HttpContext.Current.Session["MyValue"].ToString();
+if(statedata!=null)
+{
+
+    
+
+<html>
+    <head>
+        <style>
+           li:hover {
+                background:orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+       
+                <div class="row"style="min-height:50px;">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2">
+                <form action="/Home/LogOut">
+                <button class="btn btn-primary btn btn-lg">Logout</button>
+                </form>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+
+            <div class="row" style="margin-bottom:2%;" id="links">
+                <div class="col-sm-3" style="min-height:300px; background:linear-gradient(to right top, #ee210d, #fc6900, #ff9d00, #fece00, #f3fd15);; padding:3%;">
+                    <a href="/Home/Admin" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-home" style="font-size:40px;"></span> Home </li></a>
+                   <a href="/Home/UploadFile" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-upload" style="font-size:40px;"></span> UploadFile</li></a>
+                    <a href="/Home/AddMaterial" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-plus" style="font-size:40px;"></span> AddMaterial</li></a>
+                    <a href="/Home/DynamicEvent" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-calendar" style="font-size:36px;"></span> Current Activity</li></a>
+                    <a href="/Home/OurTeam" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-group" style="font-size:36px;"></span> OurTeam</li></a>
+                    <a href="/Home/FileManagement" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="glyphicon glyphicon-folder-close" style="font-size:36px;"></span> Filemanagement</li></a>
+                    <a href="/Home/EventManagement" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="glyphicon glyphicon-briefcase" style="font-size:38px;"></span> Activity Management</li></a>
+                    <a href="/Home/ResponseManagement" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:19px; list-style:none;"><span class="fa fa-exchange" style="font-size:36px;"></span>ResponseManagement</li></a>
+                    <a href="/Home/Settings" style="padding:2%; color:white; text-decoration:none;"><li style="font-size:20px; list-style:none;"><span class="fa fa-gears" style="font-size:40px;"></span> ChangePassword</li></a>
+                </div>
+                <div class="col-sm-9" style="background:whitesmoke; min-height:638px;">
+                   
+                    <div class="col-sm-3" style=" margin-left:4%;margin-top:6%;">
+                    <img src="~/Content/photos/IMG-20190809-WA0010.jpg" style="height:250px;; width:100%;" /><br />
+                        <h2 >Name</h2>
+                        <h3 >Aman Raj Singh</h3>
+                        <h2 >College</h2>
+                        <h3 >MMIT Siddharth Nagar</h3>
+                        <h2 >Skills</h2>
+                        <h3 >Programming & Degining</h3>
+                    </div>
+                    <div class="col-sm-3" style=" margin-left:4%;margin-top:6%;">
+                        <img src="~/Content/temp2.jpg" style="height:250px; width:100%;" /><br />
+                        <h2 >Name</h2>
+                        <h3 >Akhilesh</h3>
+                        <h2 >Company</h2>
+                        <h3 >M.Technology</h3>
+                        <h2 >Post</h2>
+                        <h3 >Managing Directer</h3>
+                    </div>
+                    <div class="col-sm-3" style=" margin-left:4%;margin-top:6%;">
+                     <img src="~/Content/temp2.jpg" style="height:250px; width:100%;" /><br />
+                        <h2 >Name</h2>
+                        <h3 >Akash Pathak</h3>
+                        <h2 >Company</h2>
+                        <h3 >M. Technology</h3>
+                        <h2 >Post</h2>
+                        <h3 >Developer</h3>
+                    </div>
+                </div>
+                   
+            </div>
+
+      <!-------
+                   <div class="row">
+                <h1 style="color:white;">General Works</h1>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:orange; border-radius:100% 100%;">
+   <center><a href="/Home/UploadFile"><span><i class="fa fa-upload" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Upload File</h3>
+                </div>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:skyblue; border-radius:100% 100%;">
+                    <center><a href="/Home/AddMaterial"><span><i class="fa fa-plus" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Add Material</h3>
+                </div>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:silver; border-radius:100% 100%;">
+                    <center><a href="/Home/DynamicEvent"><span><i class="fa fa-calendar" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Dynamic Events</h3>
+                </div>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:aqua; border-radius:100% 100%;">
+                    <center><a href="/Home/OurTeam"><span><i class="fa fa-group" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Our Teams</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 style="color:white;">Management Works</h1>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:khaki; border-radius:100% 100%;">
+                    <center><a href="/Home/FileManagement"><span><i class="glyphicon glyphicon-folder-close" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">File Management</h3>
+                </div>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:aquamarine; border-radius:100% 100%;">
+                    <center><a href="/Home/EventManagement"><span><i class="glyphicon glyphicon-briefcase" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Event Management</h3>
+                </div>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:thistle; border-radius:100% 100%;">
+                    <center><a href="/Home/ResponseManagement"><span><i class="fa fa-exchange" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Response Manageent</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 style="color:white;">Settings</h1>
+                <div class="col-sm-3 hvr hvr-push" style="min-height:300px; background:khaki; border-radius:100% 100%;">
+                    <center><a href="/Home/Settings"><span><i class="fa fa-gears" style="font-weight:bold; font-size:100px; text-align:center; margin-top:20%;"></i></span></a></center>
+                    <h3 style="text-align:center; font-weight:bold;">Change Password</h3>
+                </div>
+            </div>
+            -->
+        </div>
+    </body>
+</html>
+}
+else
+{
+    Response.Write("invalid user");
+}
+}
